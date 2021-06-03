@@ -13,7 +13,7 @@ export class CategoryNavigation extends Component {
             <Link
               className="btn btn-secondary btn-block"
               key={c}
-              to={`${this.props.baseUrl}/${c.lowerCase()}`}
+              to={`${this.props.baseUrl}/${c.toLowerCase()}`}
             >
               {c}
             </Link>

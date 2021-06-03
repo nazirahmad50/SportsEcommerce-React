@@ -18,14 +18,14 @@ export const data = {
     {
       id: 3,
       name: "Surfer",
-      category: "Watersports",
+      category: "Running",
       description: "surfs on top of water",
       price: 999,
     },
     {
       id: 4,
       name: "Gold ball",
-      category: "Soccer",
+      category: "Chess",
       description: "Ball that will break your feet",
       price: 69.69,
     },
