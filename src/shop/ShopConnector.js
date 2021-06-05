@@ -4,6 +4,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import { DataTypes } from "../data/Types";
 import { Shop } from "./Shop";
 import { loadData } from "../data/ActionCreators";
+
 const mapStateToProps = (dataStore) => ({
   ...dataStore,
 });
