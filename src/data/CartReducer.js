@@ -22,7 +22,7 @@ export const CartReducer = (storeData, action) => {
     case ActionTypes.CART_UPDATE:
       newStore.cart = newStore.cart.map((i) => {
         if (i.product.id === action.payload.product.id) {
-          const diff = action.payload.quantity - item.quantity;
+          const diff = action.payload.quantity - i.quantity;
           newStore.cartItems += diff;
           newStore.cartPrice += i.product.price * diff;
           return action.payload;
