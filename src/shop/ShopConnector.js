@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { DataTypes } from "../data/Types";
 import { Shop } from "./Shop";
+import { loadData } from "../data/ActionCreators";
 import {
-  loadData,
   addToCart,
   updateCartQuantity,
   removeFromCart,
   clearCart,
-} from "../data/ActionCreators";
+} from "../data/CartActionCreators";
 
 const mapStateToProps = (dataStore) => ({
   ...dataStore,
