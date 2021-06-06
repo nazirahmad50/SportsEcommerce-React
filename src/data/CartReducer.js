@@ -34,11 +34,11 @@ export const CartReducer = (storeData, action) => {
 
     case ActionTypes.CART_REMOVE:
       let selection = newStore.cart.find(
-        (i) => i.product.id === action.payload.id
+        (i) => i.product.id === action.payload.product.id
       );
 
       newStore.cartItems -= selection.quantity;
-      newStore.cartPrice -= selection.price;
+      newStore.cartPrice -= selection.product.price;
       newStore.cart = newStore.cart.filter((i) => i !== selection);
       return newStore;
 
